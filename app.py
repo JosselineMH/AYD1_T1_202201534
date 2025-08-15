@@ -6,11 +6,11 @@ app = Flask(__name__)
 @app.route("/api", methods=["GET"])
 def cancionFavorita():
     nombre = "Josseline Griselda Montecinos Hernández"
-    cancionFavorita = "Good News - Mac Miller"
+    album_favorito = "Flakk Daniel's Lp"
 
     data = {
         "nombre": nombre,
-        "cancion_favorita": cancionFavorita
+        "album_favorito": album_favorito
     }
 
     return Response(
